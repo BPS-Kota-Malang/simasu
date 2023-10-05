@@ -15,7 +15,7 @@ use App\Http\Controllers\MailController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landingpage');
 });
 
 Route::get('mail', [MailController::class, 'mail' ]);
