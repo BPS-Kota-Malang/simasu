@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/login', function () {
+    return view('Login.index');
+});
+
 Route::get('mail', [MailController::class, 'mail' ]);
