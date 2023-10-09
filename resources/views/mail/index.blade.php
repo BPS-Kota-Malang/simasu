@@ -22,30 +22,9 @@
             </div>
             <div class="sticky inset-0 z-20 hidden w-full my-2 mt-0 overflow-x-hidden overflow-y-auto bg-white border border-gray-400 shadow max-h-64 lg:h-auto lg:overflow-y-hidden lg:block lg:my-0 lg:border-transparent lg:shadow-none lg:bg-transparent" style="top:6em;" id="menu-content">
                 <ul class="py-2 list-reset md:py-0">
-                    <li class="py-1 font-bold border-l-4 border-transparent border-yellow-600 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent">
-                        <a href='#section1' class="block pl-4 text-gray-700 no-underline align-middle hover:text-yellow-600">
-                            <span class="pb-1 text-sm md:pb-0">Section 1</span>
-                        </a>
-                    </li>
                     <li class="py-1 border-l-4 border-transparent md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent">
-                        <a href='#section2' class="block pl-4 text-gray-700 no-underline align-middle hover:text-yellow-600">
-                            <span class="pb-1 text-sm md:pb-0">Section 2</span>
-                        </a>
-                    </li>
-                    <li class="py-1 border-l-4 border-transparent md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent">
-                        <a href='#section3' class="block pl-4 text-gray-700 no-underline align-middle hover:text-yellow-600">
-                            <span class="pb-1 text-sm md:pb-0">Section 3</span>
-                        </a>
-                    </li>
-                    <li class="py-1 border-l-4 border-transparent md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent">
-                        <a href='#section4' class="block pl-4 text-gray-700 no-underline align-middle hover:text-yellow-600">
-                            <span class="pb-1 text-sm md:pb-0">Section 4</span>
-                        </a>
-                    </li>
-
-                    <li class="py-1 border-l-4 border-transparent md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent">
-                        <a href='#section5' class="block pl-4 text-gray-700 no-underline align-middle hover:text-yellow-600">
-                            <span class="pb-1 text-sm md:pb-0">Section 5</span>
+                        <a href='#sectionBuatSurat' class="block pl-4 text-gray-700 no-underline align-middle hover:text-yellow-600">
+                            <span class="pb-1 text-sm md:pb-0">Buat Surat</span>
                         </a>
                     </li>
                 </ul>
@@ -55,235 +34,116 @@
         <!--Section container-->
         <section class="w-full lg:w-4/5">
 
-            <!--Title-->
-            <h1 class="flex items-center px-2 mt-12 font-sans text-xl font-bold text-gray-700 break-normal lg:mt-0 md:text-2xl">
-				Multi Section Form with Scrollspy
-			</h1>
-
             <!--divider-->
             <hr class="my-12 bg-gray-300">
 
             <!--Title-->
-            <h2 id='section1' class="px-2 pb-8 font-sans text-xl font-bold text-gray-700 break-normal">Section 1</h2>
+            <!-- <h3 class="px-2 pb-8 font-sans text-xl font-bold text-gray-700 break-normal">Pembuatan Surat</h3> -->
 
             <!--Card-->
-            <div class="p-8 mt-6 leading-normal bg-white rounded shadow lg:mt-0">
-                <li>Using the CDN version of <a class="text-yellow-600 underline" href="https://github.com/tailwindcss/custom-forms" target="_blank">Tailwind Custom Forms</a></li>
-                <li>This template uses jQuery for scrollspy</li>
-            </div>
-            <!--/Card-->
-
-            <!--divider-->
-            <hr class="my-12 bg-gray-300">
-
-            <!--Title-->
-            <h2 class="px-2 pb-8 font-sans text-xl font-bold text-gray-700 break-normal">Section 2</h2>
-
-            <!--Card-->
-            <div id='section2' class="p-8 mt-6 bg-white rounded shadow lg:mt-0">
-
+            <div id='sectionBuatSurat' class="p-8 mt-6 bg-white rounded shadow lg:mt-0">
                 <form>
+                <h3 class="px-2 pb-8 font-sans text-xl font-bold text-gray-700 break-normal">Pembuatan Surat</h3>
 
-                    <div class="mb-6 md:flex">
-                        <div class="md:w-1/3">
-                            <label class="block pr-4 mb-3 font-bold text-gray-600 md:text-left md:mb-0" for="my-textfield">
-                                Text Field
-                            </label>
-                        </div>
-                        <div class="md:w-2/3">
-                            <input class="block w-full form-input focus:bg-white" id="my-textfield" type="text" value="">
-                            <p class="py-2 text-sm text-gray-600">add notes about populating the field</p>
-                        </div>
-                    </div>
 
                     <div class="mb-6 md:flex">
                         <div class="md:w-1/3">
                             <label class="block pr-4 mb-3 font-bold text-gray-600 md:text-left md:mb-0" for="my-select">
-                                Drop down field
+                                Nomor Surat
                             </label>
                         </div>
                         <div class="md:w-2/3">
-                            <select name="" class="block w-full form-select focus:bg-white" id="my-select">
-                                <option value="Default">Default</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                            </select>
+                            <select name="types" class="block w-full form-select focus:bg-white" id="my-select">
+                            <option value="Default">Silakan Pilih Nomor Surat</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
 
-                            <p class="py-2 text-sm text-gray-600">add notes about populating the field</p>
+                         </select>
                         </div>
                     </div>
 
                     <div class="mb-6 md:flex">
                         <div class="md:w-1/3">
-                            <label class="block pr-4 mb-3 font-bold text-gray-600 md:text-left md:mb-0" for="my-textarea">
-                                Text Area
+                            <label class="block pr-4 mb-3 font-bold text-gray-600 md:text-left md:mb-0" for="my-select"  required>
+                                Tujuan
                             </label>
                         </div>
                         <div class="md:w-2/3">
-                            <textarea class="block w-full form-textarea focus:bg-white" id="my-textarea" value="" rows="8"></textarea>
-                            <p class="py-2 text-sm text-gray-600">add notes about populating the field</p>
-                        </div>
+                            <select name="types" class="block w-full form-select focus:bg-white" id="my-select">
+                            <option value="Default">Silakan Pilih Tujuan</option>
+                         </select>
+                         </div>
                     </div>
-
-                    <div class="md:flex md:items-center">
-                        <div class="md:w-1/3"></div>
-                        <div class="md:w-2/3">
-                            <button class="px-4 py-2 font-bold text-white bg-yellow-700 rounded shadow hover:bg-yellow-500 focus:shadow-outline focus:outline-none" type="button">
-                                Save
-                            </button>
-                        </div>
-                    </div>
-                </form>
-
-            </div>
-            <!--/Card-->
-
-            <!--divider-->
-            <hr class="my-12 bg-gray-300">
-
-            <!--Title-->
-            <h2 class="px-2 pb-8 font-sans text-xl font-bold text-gray-700 break-normal">Section 3</h2>
-
-            <!--Card-->
-            <div id='section3' class="p-8 mt-6 bg-white rounded shadow lg:mt-0">
-
-                <form>
 
                     <div class="mb-6 md:flex">
                         <div class="md:w-1/3">
-                            <label class="block pr-4 mb-3 font-bold text-gray-600 md:text-left md:mb-0" for="my-multiselect">
-                                Multi Select
-                            </label>
-                        </div>
-                        <div class="md:w-2/3">
-                            <select class="block w-full form-multiselect" multiple id="my-multiselect">
-                                <option>Option 1</option>
-                                <option>Option 2</option>
-                                <option>Option 3</option>
-                                <option>Option 4</option>
-                                <option>Option 5</option>
-                            </select>
-                            <p class="py-2 text-sm text-gray-600">add notes about populating the field</p>
-                        </div>
-                    </div>
-
-                    <div class="md:flex md:items-center">
-                        <div class="md:w-1/3"></div>
-                        <div class="md:w-2/3">
-                            <button class="px-4 py-2 font-bold text-white bg-yellow-700 rounded shadow hover:bg-yellow-500 focus:shadow-outline focus:outline-none" type="button">
-                                Save
-                            </button>
-                        </div>
-                    </div>
-                </form>
-
-            </div>
-            <!--/Card-->
-
-            <!--divider-->
-            <hr class="my-12 bg-gray-300">
-
-            <!--Title-->
-            <h2 class="px-2 pb-8 font-sans text-xl font-bold text-gray-700 break-normal">Section 4</h2>
-
-            <!--Card-->
-            <div id='section4' class="p-8 mt-6 bg-white rounded shadow lg:mt-0">
-
-                <form>
-
-                    <div class="mb-6 md:flex">
-                        <div class="md:w-1/3">
-                            <label class="block pr-4 mb-3 font-bold text-gray-600 md:text-left md:mb-0" for="my-radio">
-                                Radio Buttons
+                            <label class="block pr-4 mb-3 font-bold text-gray-600 md:text-left md:mb-0" for="my-radio"  required>
+                               Sifat Surat
                             </label>
                         </div>
                         <div class="md:w-2/3">
                             <div class="mt-2">
                                 <label class="inline-flex items-center">
-                                    <input type="radio" class="text-indigo-600 form-radio" name="radioOption" value="A">
-                                    <span class="ml-2">Radio A</span>
+                                    <input type="radio" class="text-green-500 form-radio" name="radioOption" value="A">
+                                    <span class="ml-2">Rahasia</span>
                                 </label>
                                 <label class="inline-flex items-center ml-6">
-                                    <input type="radio" class="form-radio" name="radioOption" value="B">
-                                    <span class="ml-2">Radio B</span>
+                                    <input type="radio"  class="form-radio text-green-500"name="radioOption" value="B">
+                                    <span class="ml-2">Umum</span>
                                 </label>
                             </div>
-                            <p class="py-2 text-sm text-gray-600">add notes about populating the field</p>
                         </div>
                     </div>
 
                     <div class="mb-6 md:flex">
                         <div class="md:w-1/3">
-                            <label class="block pr-4 mb-3 font-bold text-gray-600 md:text-left md:mb-0" for="my-checkbox">
-                                Checkboxes
+                            <label class="block pr-4 mb-3 font-bold text-gray-600 md:text-left md:mb-0" for="my-textfield">
+                                Perihal
                             </label>
                         </div>
                         <div class="md:w-2/3">
-                            <div>
-                                <label class="inline-flex items-center">
-                                    <input type="checkbox" class="text-indigo-600 form-checkbox" checked>
-                                    <span class="ml-2">Option 1</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label class="inline-flex items-center">
-                                    <input type="checkbox" class="text-green-500 form-checkbox" checked>
-                                    <span class="ml-2">Option 2</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label class="inline-flex items-center">
-                                    <input type="checkbox" class="text-pink-600 form-checkbox" checked>
-                                    <span class="ml-2">Option 3</span>
-                                </label>
-                            </div>
-                            <p class="py-2 text-sm text-gray-600">add notes about populating the field</p>
+                            <input class="block w-full form-input focus:bg-white" id="my-textfield" type="text" value=""  placeholder="Silakan isi perihal surat anda" required>
                         </div>
                     </div>
-
-                    <div class="md:flex md:items-center">
-                        <div class="md:w-1/3"></div>
+                    <div class="mb-6 md:flex">
+                        <div class="md:w-1/3">
+                            <label class="block pr-4 mb-3 font-bold text-gray-600 md:text-left md:mb-0" for="my-textfield">
+                                Lampiran
+                            </label>
+                        </div>
                         <div class="md:w-2/3">
-                            <button class="px-4 py-2 font-bold text-white bg-yellow-700 rounded shadow hover:bg-yellow-500 focus:shadow-outline focus:outline-none" type="button">
-                                Save
-                            </button>
+                            <input class="block w-full form-input focus:bg-white" id="my-textfield" type="text" value="" placeholder="Silakan isi jumlah lampiran surat anda" required>
                         </div>
                     </div>
-                </form>
 
-            </div>
-            <!--/Card-->
-
-            <!--divider-->
-            <hr class="my-12 bg-gray-300">
-
-            <!--Title-->
-            <h2 class="px-2 pb-8 font-sans text-xl font-bold text-gray-700 break-normal">Section 5</h2>
-
-            <!--Card-->
-            <div id='section5' class="p-8 mt-6 bg-white rounded shadow lg:mt-0">
-
-                <blockquote class="pl-8 my-4 italic border-l-4 border-yellow-600 md:pl-12">Final confirmation disclaimer message etc</blockquote>
-
-                <div class="pt-8">
-
-                    <button class="px-4 py-2 mr-4 font-bold text-white bg-yellow-700 rounded shadow hover:bg-yellow-500 focus:shadow-outline focus:outline-none" type="button">
-                        Save
-                    </button>
-
-                    <button class="px-4 py-2 mr-4 font-bold text-gray-700 bg-yellow-100 rounded shadow hover:bg-yellow-200 focus:shadow-outline focus:outline-none" type="button">
-                        Additional Action
-                    </button>
-
-                    <button class="px-4 py-2 font-bold text-gray-700 bg-yellow-100 rounded shadow hover:bg-yellow-200 focus:shadow-outline focus:outline-none" type="button">
-                        Additional Action
-                    </button>
-
+                    <div class="mb-6 md:flex">
+                    <div class="md:w-1/3">
+                        <label class="block pr-4 mb-3 font-bold text-gray-600 md:text-left md:mb-0" for="tanggal">
+                            Tanggal
+                        </label>
+                    </div>
+                    <div class="md:w-2/3">
+                        <input type="date" id="tanggal" name="tanggal" class="block w-full form-input focus:bg-white" id="my-select" required>
+                    </div>
                 </div>
 
+
+                    <!-- <blockquote class="pl-8 my-4 italic border-l-4 border-yellow-600 md:pl-12">Silakan Periksa Kembali, agar tidak ada kekeliruan!</blockquote> -->
+
+                    <div class="pt-8">
+
+                        <button class="px-4 py-2 mr-4 font-bold text-white bg-yellow-700 rounded shadow hover:bg-yellow-500" type="button">
+                        Buat surat
+                        </button>
+<!-- 
+                        <button class="px-4 py-2 mr-4 font-bold text-gray-700 bg-yellow-100 rounded shadow hover:bg-yellow-200 focus:shadow-outline focus:outline-none" type="button">
+                            Buat surat
+                        </button> -->
+                    </div>
+
+                </div>
+                </form>
             </div>
-            <!--/Card-->
 
         </section>
         <!--/Section container-->
