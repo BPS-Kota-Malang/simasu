@@ -14,8 +14,13 @@ use App\Http\Controllers\MailController;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return view('landingpage');
+=======
+Route::get('/home', function () {
+    return view('dashboard');
+>>>>>>> f8dc595 (dashboard)
 });
 
 Route::get('mail', [MailController::class, 'mail' ]);
